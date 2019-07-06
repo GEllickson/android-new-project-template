@@ -1,9 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
+
     defaultConfig {
         applicationId "com.georgeellickson.renamethis"
         minSdkVersion 21
@@ -12,6 +13,12 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,13 +32,35 @@ dependencies {
 
     implementation project(':core')
 
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation Dependencies.kotlinStdLib
+    implementation Dependencies.kotlinCoroutines
 
-    testImplementation 'junit:junit:4.12'
+    implementation Dependencies.androidxAppcompat
+    implementation Dependencies.androidxRecyclerview
+    implementation Dependencies.androidxConstraintlayout
+    implementation Dependencies.androidxCoreKtx
+    implementation Dependencies.androidxLifecycleExtensions
+    kapt Dependencies.androidxLifecycleCompiler
+    implementation Dependencies.androidxRoomRuntime
+    kapt Dependencies.androidxRoomCompiler
+    implementation Dependencies.androidxPaging
+    implementation Dependencies.androidxWorkRuntime
+    implementation Dependencies.materialComponents
 
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation Dependencies.dagger
+    kapt Dependencies.daggerProcessor
+    implementation Dependencies.okhttp
+    implementation Dependencies.retrofit
+    implementation Dependencies.picasso
+
+    testImplementation Dependencies.junit
+    testImplementation Dependencies.mockito
+    testImplementation Dependencies.mockitoKotlin
+    testImplementation Dependencies.okhttpMockServer
+
+    androidTestImplementation Dependencies.androidxTestCore
+    androidTestImplementation Dependencies.androidxTestRunner
+    androidTestImplementation Dependencies.androidxTestRules
+    androidTestImplementation Dependencies.androidxEspresso
+    androidTestImplementation Dependencies.mockitoAndroid
 }
