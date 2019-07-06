@@ -42,33 +42,33 @@ object Versions {
 
     // Kotlin
     const val kotlin = "1.3.41"
-    const val kotlinCoroutines = "1.1.1"
+    const val kotlinCoroutines = "1.2.2"
 
     // Androidx
     const val androidxAppCompat = "1.0.2"
     const val androidxRecyclerView = "1.0.0"
     const val androidxConstraintLayout = "1.1.3"
-    const val androidxCoreKtx = "1.0.1"
+    const val androidxCoreKtx = "1.0.2"
     const val androidxLifecycle = "2.0.0"
-    const val androidxRoom = "2.0.0"
+    const val androidxRoom = "2.1.0"
     const val androidxPaging = "2.1.0"
-    const val androidxWorkRuntime = "2.0.0"
+    const val androidxWorkRuntime = "2.0.1"
     const val materialComponents = "1.0.0"
 
     // Non-Google
-    const val dagger = "2.21"
+    const val dagger = "2.23.2"
     const val okhttp = "4.0.0"
     const val retrofit = "2.6.0"
     const val picasso = "2.71828"
 
     // Unit Test
     const val junit = "4.12"
-    const val mockito = "2.23.0"
+    const val mockito = "2.28.2"
     const val mockitoKotlin = "2.1.0"
 
     // Android Test
-    const val androidxTestCore = "1.0.0"
-    const val androidxTestRunner = "1.1.1"
-    const val androidxTestRules = "1.1.1"
-    const val androidxEspresso = "3.1.1"
+    const val androidxTestCore = "1.2.0"
+    const val androidxTestRunner = "1.2.0"
+    const val androidxTestRules = "1.2.0"
+    const val androidxEspresso = "3.2.0"
 }
