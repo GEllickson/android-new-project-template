@@ -1,6 +1,8 @@
 package com.georgeellickson.renamethis
 
 import android.app.Application
+import android.os.StrictMode
+import android.os.StrictMode.ThreadPolicy.Builder
 
 class MainApplication : Application() {
 
@@ -11,5 +13,16 @@ class MainApplication : Application() {
         // init Dagger
 
         // init 3rd party libs
+
+        if (BuildConfig.DEBUG) {
+            StrictMode.setThreadPolicy(
+                Builder()
+                    .detectDiskReads()
+                    .detectDiskWrites()
+                    .detectNetwork()
+                    .penaltyLog()
+                    .build()
+            )
+        }
     }
 }
