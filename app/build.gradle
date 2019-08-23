@@ -56,6 +56,7 @@ dependencies {
     implementation Dependencies.okhttp
     implementation Dependencies.retrofit
     implementation Dependencies.picasso
+    implementation Dependencies.timber
 
     testImplementation Dependencies.junit
     testImplementation Dependencies.mockito

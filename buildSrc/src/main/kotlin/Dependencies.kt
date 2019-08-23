@@ -23,6 +23,7 @@ object Dependencies {
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val picasso = "com.squareup.picasso:picasso:${Versions.picasso}"
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
 
     // Unit Test
     const val junit = "junit:junit:${Versions.junit}"
@@ -60,6 +61,7 @@ object Versions {
     const val okhttp = "4.0.0"
     const val retrofit = "2.6.0"
     const val picasso = "2.71828"
+    const val timber = "4.7.1"
 
     // Unit Test
     const val junit = "4.12"
