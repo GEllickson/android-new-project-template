@@ -36,36 +36,37 @@ dependencies {
 
     implementation project(":core")
 
-    implementation Dependencies.kotlinStdLib
-    implementation Dependencies.kotlinCoroutines
+    implementation rootProject.kotlinStd
+    implementation rootProject.kotlinxCoroutines
 
-    implementation Dependencies.androidxAppcompat
-    implementation Dependencies.androidxRecyclerview
-    implementation Dependencies.androidxConstraintlayout
-    implementation Dependencies.androidxCoreKtx
-    implementation Dependencies.androidxLifecycleExtensions
-    kapt Dependencies.androidxLifecycleCompiler
-    implementation Dependencies.androidxRoomRuntime
-    kapt Dependencies.androidxRoomCompiler
-    implementation Dependencies.androidxPaging
-    implementation Dependencies.androidxWorkRuntime
-    implementation Dependencies.materialComponents
+    implementation rootProject.androidxAppcompat
+    implementation rootProject.androidxRecyclerview
+    implementation rootProject.androidxConstraintlayout
+    implementation rootProject.androidxCoreKtx
+    implementation rootProject.androidxLifecycleExtensions
+    implementation rootProject.androidxLifecycleViewModelKtx
+    kapt rootProject.androidxLifecycleCompiler
+    implementation rootProject.androidxRoomRuntime
+    kapt rootProject.androidxRoomCompiler
+    implementation rootProject.androidxPaging
+    implementation rootProject.androidxWorkRuntime
+    implementation rootProject.materialComponents
 
-    implementation Dependencies.dagger
-    kapt Dependencies.daggerProcessor
-    implementation Dependencies.okhttp
-    implementation Dependencies.retrofit
-    implementation Dependencies.picasso
-    implementation Dependencies.timber
+    implementation rootProject.dagger
+    kapt rootProject.daggerProcessor
+    implementation rootProject.okhttp
+    implementation rootProject.retrofit
+    implementation rootProject.picasso
+    implementation rootProject.timber
 
-    testImplementation Dependencies.junit
-    testImplementation Dependencies.mockito
-    testImplementation Dependencies.mockitoKotlin
-    testImplementation Dependencies.okhttpMockServer
+    testImplementation rootProject.junit
+    testImplementation rootProject.mockito
+    testImplementation rootProject.mockitoKotlin
+    testImplementation rootProject.okhttpMockServer
 
-    androidTestImplementation Dependencies.androidxTestCore
-    androidTestImplementation Dependencies.androidxTestRunner
-    androidTestImplementation Dependencies.androidxTestRules
-    androidTestImplementation Dependencies.androidxEspresso
-    androidTestImplementation Dependencies.mockitoAndroid
+    androidTestImplementation rootProject.androidxTestCore
+    androidTestImplementation rootProject.androidxTestRunner
+    androidTestImplementation rootProject.androidxTestRules
+    androidTestImplementation rootProject.androidxEspresso
+    androidTestImplementation rootProject.mockitoAndroid
 }
