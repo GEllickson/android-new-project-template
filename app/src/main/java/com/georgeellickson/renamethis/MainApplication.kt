@@ -3,16 +3,14 @@ package com.georgeellickson.renamethis
 import android.app.Application
 import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy.Builder
+import timber.log.Timber
+import timber.log.Timber.DebugTree
 
 class MainApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        // init anything core
-
-        // init Dagger
-
-        // init 3rd party libs
+        // init anything core, Dagger, 3rd party libs, etc.
 
         if (BuildConfig.DEBUG) {
             StrictMode.setThreadPolicy(
@@ -23,6 +21,8 @@ class MainApplication : Application() {
                     .penaltyLog()
                     .build()
             )
+
+            Timber.plant(DebugTree())
         }
     }
 }
