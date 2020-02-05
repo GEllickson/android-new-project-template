@@ -15,12 +15,12 @@ buildscript {
 
         // AndroidX
         androidxAppcompat = "androidx.appcompat:appcompat:1.1.0"
+        androidxFragmentKtx = "androidx.fragment:fragment-ktx:1.2.1"
         androidxRecyclerview = "androidx.recyclerview:recyclerview:1.1.0"
         androidxConstraintlayout = "androidx.constraintlayout:constraintlayout:1.1.3"
         androidxCoreKtx = "androidx.core:core-ktx:1.1.0"
-
-        androidxLifecycle = "2.1.0"
-        androidxLifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:$androidxLifecycle"
+        androidxLifecycle = "2.2.0"
+        androidxLifecycleLiveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$androidxLifecycle"
         androidxLifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidxLifecycle"
         androidxLifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:$androidxLifecycle"
         androidxRoom = "2.2.3"
@@ -28,7 +28,7 @@ buildscript {
         androidxRoomCompiler = "androidx.room:room-compiler:$androidxRoom"
         androidxRoomRuntime = "androidx.room:room-ktx:$androidxRoom"
         androidxPaging = "androidx.paging:paging-runtime:2.1.1"
-        androidxWorkRuntime = "androidx.work:work-runtime:2.2.0"
+        androidxWorkRuntime = "androidx.work:work-runtime-ktx:2.3.1"
         materialComponents = "com.google.android.material:material:1.1.0-rc01"
 
         // Non-Google
@@ -52,6 +52,7 @@ buildscript {
         mockito = "org.mockito:mockito-core:$mockitoVersion"
         mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
         okhttpMockServer = "com.squareup.okhttp3:mockwebserver:$okhttpVersion"
+        androidxArchCore = "androidx.arch.core:core-testing:2.1.0"
 
         // Android Test
         androidxTestVersion = "1.2.0"
