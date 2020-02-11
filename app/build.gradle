@@ -59,6 +59,7 @@ dependencies {
     implementation dagger
     kapt daggerProcessor
     implementation okhttp
+    implementation okhttpLogging
     implementation moshi
     kapt moshiCodegen
     implementation retrofit
