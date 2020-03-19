@@ -66,6 +66,7 @@ dependencies {
     implementation retrofitMoshi
     implementation picasso
     implementation timber
+    debugImplementation leakCanary
 
     testImplementation junit
     testImplementation mockito
