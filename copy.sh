@@ -6,7 +6,6 @@ if [ $# -eq 0 ]; then
 fi
 
 NEW_APP_DIR="$1"
-PROJECT_NAME=$(basename ~+)
 
-mkdir ../$NEW_APP_DIR
-cp -r app gradle .gitignore build.gradle gradle.properties gradlew gradlew.bat settings.gradle ../$NEW_APP_DIR
+mkdir "$NEW_APP_DIR"
+cp -r app gradle .gitignore build.gradle gradle.properties gradlew gradlew.bat settings.gradle "$NEW_APP_DIR"
